@@ -16,7 +16,7 @@ export function applyCoupon () {
       coupon = discount ? coupon : null
 
       const basket = await BasketModel.findByPk(id)
-      if (!basket) {
+      if (basket == null) {
         next(new Error(`Basket with id=${id} does not exist.`))
         return
       }

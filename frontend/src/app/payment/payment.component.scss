@@ -48,10 +48,7 @@ mat-card {
 }
 
 .custom-card {
-  padding-bottom: $space-ml;
-  padding-left: $space-l;
-  padding-right: $space-l;
-  padding-top: $space-ml;
+  padding: $space-ml $space-l $space-ml $space-l;
 }
 
 .card-title {
@@ -97,7 +94,8 @@ mat-card {
 
 /* Stack the payment options on < lg */
 .responsive-row { flex-wrap: nowrap; }
-@media (max-width: 1279.98px) {
+
+@media (width <= 1279.98px) {
   .responsive-row { flex-direction: column; }
 
   .responsive-row .col { flex: 0 0 100%;
@@ -106,7 +104,7 @@ mat-card {
 }
 
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .mat-own-card {
     margin-left: 10%;
     margin-right: 10%;

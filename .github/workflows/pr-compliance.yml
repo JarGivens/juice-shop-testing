@@ -1,4 +1,4 @@
-name: 'PR Compliance Check'
+name: "PR Compliance Check"
 
 on:
   pull_request_target:
@@ -19,7 +19,7 @@ jobs:
           script: |
             const pr = context.payload.pull_request;
             const author = pr.user.login;
-            
+
             // Fetch files changed in PR
             const { data: filesData } = await github.rest.pulls.listFiles({
               owner: context.repo.owner,
@@ -32,7 +32,7 @@ jobs:
               additions: f.additions,
               deletions: f.deletions
             }));
-            
+
             // Fetch commits for DCO check
             const { data: commitsData } = await github.rest.pulls.listCommits({
               owner: context.repo.owner,
@@ -44,7 +44,7 @@ jobs:
                 message: c.commit.message
               }
             }));
-            
+
             const filteredPr = {
               number: pr.number,
               body: pr.body,
@@ -52,7 +52,7 @@ jobs:
               base: { ref: pr.base.ref },
               user: { login: pr.user.login }
             };
-            
+
             core.setOutput('pr', JSON.stringify(filteredPr));
             core.setOutput('author', author);
             core.setOutput('files', JSON.stringify(files));
@@ -162,9 +162,9 @@ jobs:
             const body = (pr.body || '').toLowerCase();
             const title = (pr.title || '').toLowerCase();
             const prBody = pr.body || '';
-            
+
             let spamScore = 0;
-            
+
             const sastDastTools = /semgrep|snyk|sonar|fortify|checkmarx|veracode|trivy|grype|zap|burp/i;
             if (sastDastTools.test(title)) {
               spamScore += 25;
@@ -182,7 +182,7 @@ jobs:
               spamScore += 25;
               console.log(`+25 Score (SAST/DAST tool name in filenames) - Current: ${spamScore}`);
             }
-            
+
             if (title.length <= 5 || /^(update|fix|patch|docs|hi|hello|test|bug fix|typo|lab|homework|fixes|problem)$/i.test(title)) {
               spamScore += 20;
               console.log(`+20 Score (Low quality title: "${title}") - Current: ${spamScore}`);
@@ -199,7 +199,7 @@ jobs:
               spamScore += 50;
               console.log(`+50 Score (Common fake change to lib/insecurity.ts detected) - Current: ${spamScore}`);
             }
-            
+
             const maintainerFiles = [
               'HALL_OF_FAME.md', 'LICENSE', 'SECURITY.md', 'CODE_OF_CONDUCT.md', 'CONTRIBUTING.md', 'crowdin.yaml',
               'AGENTS.md', 'CODEOWNERS', 'config.schema.yml', 'ctf.key', 'app.json'
@@ -215,7 +215,7 @@ jobs:
               f.filename.startsWith('.gitlab/') ||
               f.filename.startsWith('.zap/')
             ).length;
-            
+
             if (maintainerFileCount > 0) {
               spamScore += 40;
               console.log(`+40 Score (Modified maintainer-only files) - Current: ${spamScore}`);
@@ -250,7 +250,7 @@ jobs:
                 console.log(`+30 Score (Low amount of total changes) - Current: ${spamScore}`);
               }
             }
-            
+
             if (process.env.BRANCH_VIOLATION === 'true') {
               spamScore += 15;
               console.log(`+15 Score (Wrong target branch) - Current: ${spamScore}`);
@@ -271,7 +271,7 @@ jobs:
               spamScore += 15;
               console.log(`+15 Score (Direct I18N Modification) - Current: ${spamScore}`);
             }
-            
+
             if (/(?:closes|fixes|resolves)\s+#\d+/i.test(prBody)) {
               spamScore -= 50;
               console.log(`-50 Score (References an issue) - Current: ${spamScore}`);
@@ -280,7 +280,7 @@ jobs:
               spamScore -= 30;
               console.log(`-30 Score (References an issue in title) - Current: ${spamScore}`);
             }
-            
+
             const spamRating = Math.max(0, Math.min(100, spamScore));
             core.setOutput('spamRating', spamRating);
             console.log(`===================================`);
@@ -310,9 +310,9 @@ jobs:
             const i18nModified = process.env.I18N_VIOLATION === 'true';
             const spamRating = parseInt(process.env.SPAM_RATING);
             const isSpam = spamRating >= 75;
-            
+
             const violations = [];
-            
+
             const checkEmojis = [
               !wrongBranch ? '✅' : '❌',
               !aiMissing ? '✅' : '❌',
@@ -322,7 +322,7 @@ jobs:
             ].join('');
             const spamPrefix = isSpam ? '🚨 ' : (spamRating >= 40 ? '⚠️ ' : '✅ ');
             core.setOutput('results', `${checkEmojis}${spamRating > 0 ? ` (${spamPrefix}Spam Score: ${spamRating}/100)` : ''} - ${author}`);
-            
+
             if (isSpam) {
               violations.push(
                 '🚨 **Potential Spam Detected:** _This PR has been identified as potential spam (Rating: ' + spamRating + '/100) based on recurring indicators._ ' +
@@ -359,16 +359,16 @@ jobs:
                 '🌐 **Direct I18N Modification:** Translations must be contributed via [Crowdin](https://crowdin.com/project/owasp-juice-shop) and not via GitHub PRs. Please see our [translation guidelines](https://pwning.owasp-juice.shop/companion-guide/latest/part3/translation.html) for more details.'
               );
             }
-            
+
             if (violations.length === 0) {
               console.log('All compliance checks passed.');
               return;
             }
-            
+
             const header = 'Unfortunately, this PR does not meet our contributing guidelines and has been closed:';
             const violationsList = violations.map(v => '- ' + v).join('\n');
             let comment = '';
-            
+
             if (isSpam) {
               comment = [header, '', violationsList].join('\n');
             } else {
@@ -382,10 +382,10 @@ jobs:
                 'Please address the above and open a new PR. If you have questions, check our [contributing guidelines](https://github.com/juice-shop/juice-shop/blob/develop/CONTRIBUTING.md) '
               ].join('\n');
             }
-            
+
             const labels = ['invalid'];
             if (isSpam) labels.push('spam');
-            
+
             try {
               await github.rest.issues.addLabels({
                 owner: context.repo.owner,
@@ -396,7 +396,7 @@ jobs:
             } catch (e) {
               console.log(`Failed to add labels to PR #${pr.number}: ${e.message}`);
             }
-            
+
             try {
               await github.rest.issues.createComment({
                 owner: context.repo.owner,
@@ -407,7 +407,7 @@ jobs:
             } catch (e) {
               console.log(`Failed to create comment on PR #${pr.number}: ${e.message}`);
             }
-            
+
             try {
               await github.rest.pulls.update({
                 owner: context.repo.owner,
@@ -418,7 +418,7 @@ jobs:
             } catch (e) {
               console.log(`Failed to close PR #${pr.number}: ${e.message}`);
             }
-            
+
             console.log(`PR #${pr.number} closed due to ${violations.length} compliance violation(s). Applied labels: ${labels.join(', ')}`);
         env:
           PR_JSON: ${{ steps.init.outputs.pr }}

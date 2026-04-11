@@ -8,10 +8,9 @@
 :host {
   background-color: var(--theme-background-darker);
   border-radius: 2px;
-  box-shadow: 0 0 0 2px rgba(80, 80, 80, 0.25);
+  box-shadow: 0 0 0 2px rgb(80 80 80 / 25%);
   display: grid;
   grid-template-rows: min-content min-content auto min-content;
-
   max-height: 144px;
   overflow: hidden;
   padding: $space-s $space-l;
@@ -25,7 +24,7 @@
   }
 
   &.unsolved {
-    border-top: 4px solid rgba(80, 80, 80, 0.25);
+    border-top: 4px solid rgb(80 80 80 / 25%);
   }
 
   &.unsolved .dot {
@@ -78,7 +77,6 @@
   font-weight: 400;
   line-height: 14px;
   margin-top: $space-s;
-
   overflow-y: auto;
 }
 
@@ -152,19 +150,14 @@ $badge-size: 24px;
   align-items: center;
   background-color: var(--theme-background-lighter);
   border: 0;
-
   border-radius: calc($badge-size / 2);
   color: var(--theme-text) !important;
-  color: var(--theme-text);
   cursor: pointer;
-
   display: flex;
-
   height: $badge-size;
   justify-content: center;
   min-width: $badge-size;
   padding: 0;
-
   position: relative;
 
   mat-icon {

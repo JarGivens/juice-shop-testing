@@ -1,4 +1,4 @@
-@import '/vendor/fontsource-roboto/300.css';
-@import '/vendor/fontsource-roboto/400.css';
-@import '/vendor/fontsource-roboto/500.css';
-@import '/vendor/fontsource-roboto/700.css';
+@import url('/vendor/fontsource-roboto/300.css');
+@import url('/vendor/fontsource-roboto/400.css');
+@import url('/vendor/fontsource-roboto/500.css');
+@import url('/vendor/fontsource-roboto/700.css');

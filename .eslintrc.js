@@ -21,7 +21,7 @@ module.exports = {
     project: './tsconfig.json'
   },
   rules: {
-    'semi': ['error', 'never']
+    semi: ['error', 'never']
   },
   ignorePatterns: [
     '.eslintrc.js',

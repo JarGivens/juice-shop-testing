@@ -17,7 +17,7 @@ export function likeProductReviews () {
   return async (req: Request, res: Response, next: NextFunction) => {
     const id = req.body.id
     const user = security.authenticatedUsers.from(req)
-    if (!user) {
+    if (user == null) {
       return res.status(401).json({ error: 'Unauthorized' })
     }
 

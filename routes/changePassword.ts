@@ -31,7 +31,7 @@ export function changePassword () {
     }
 
     const loggedInUser = security.authenticatedUsers.get(token)
-    if (!loggedInUser) {
+    if (loggedInUser == null) {
       next(new Error('Blocked illegal activity by ' + connection.remoteAddress))
       return
     }
@@ -43,7 +43,7 @@ export function changePassword () {
 
     try {
       const user = await UserModel.findByPk(loggedInUser.data.id)
-      if (!user) {
+      if (user == null) {
         res.status(404).send(res.__('User not found.'))
         return
       }

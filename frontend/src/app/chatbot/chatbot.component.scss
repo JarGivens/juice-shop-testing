@@ -5,7 +5,7 @@
 
 @use '../../styles/variables' as *;
 
-$bg-chat: rgba(0, 0, 0, 0.3);
+$bg-chat: rgb(0 0 0 / 30%);
 
 mat-card {
   height: auto;
@@ -93,7 +93,7 @@ mat-form-field {
 }
 
 .speech-bubble-right {
-  background: rgb(84, 110, 122);
+  background: rgb(84 110 122);
   border-radius: 4px;
   float: right;
   font-size: 15px;
@@ -105,7 +105,7 @@ mat-form-field {
 
   &::after {
     border-left: 20px solid transparent;
-    border-top: 20px solid rgb(84, 110, 122);
+    border-top: 20px solid rgb(84 110 122);
     bottom: -20px;
     content: '';
     position: absolute;
@@ -114,7 +114,7 @@ mat-form-field {
 }
 
 .speech-bubble-left {
-  background: rgb(84, 110, 122);
+  background: rgb(84 110 122);
   border-radius: 4px;
   float: left;
   font-size: 15px;
@@ -126,7 +126,7 @@ mat-form-field {
 
   &::after {
     border-right: 20px solid transparent;
-    border-top: 20px solid rgb(84, 110, 122);
+    border-top: 20px solid rgb(84 110 122);
     bottom: -20px;
     content: '';
     left: 20px;
@@ -159,7 +159,7 @@ mat-form-field {
 }
 
 
-@media (max-width: 599.98px) {
+@media (width <= 599.98px) {
   mat-card {
     width: 90%;
   }
@@ -169,7 +169,7 @@ mat-form-field {
   }
 }
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .message-container {
     display: grid;
     grid-auto-rows: auto;

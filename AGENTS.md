@@ -13,7 +13,7 @@
 
 ## For Other AI Agents
 
-This file provides guidelines for AI agents and automated code assistants that do not have dedicated context files above. 
+This file provides guidelines for AI agents and automated code assistants that do not have dedicated context files above.
 
 **Important**: All guidelines ultimately refer to [CLAUDE.md](./.claude/CLAUDE.md), which is the **primary authoritative source** for AI contributions to OWASP Juice Shop. This document provides a quick reference and overview; for comprehensive details, always consult CLAUDE.md.
 

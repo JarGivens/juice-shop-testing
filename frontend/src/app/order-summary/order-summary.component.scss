@@ -125,7 +125,7 @@ table { width: 100%; }
 .fill { height: auto;
   width: 100%; }
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .container { flex-direction: column; }
 
   .flex-50,

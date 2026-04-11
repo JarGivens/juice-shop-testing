@@ -17,7 +17,7 @@ const router = express.Router()
 
 router.get('/', async (req: Request, res: Response, next: NextFunction) => {
   const loggedInUser = security.authenticatedUsers.get(req.cookies.token)
-  if (!loggedInUser) {
+  if (loggedInUser == null) {
     next(new Error('Blocked illegal activity by ' + req.socket.remoteAddress))
     return
   }
@@ -53,7 +53,7 @@ interface DataErasureRequestParams {
 // eslint-disable-next-line @typescript-eslint/no-misused-promises
 router.post('/', async (req: Request<Record<string, unknown>, Record<string, unknown>, DataErasureRequestParams>, res: Response, next: NextFunction): Promise<void> => {
   const loggedInUser = security.authenticatedUsers.get(req.cookies.token)
-  if (!loggedInUser) {
+  if (loggedInUser == null) {
     next(new Error('Blocked illegal activity by ' + req.socket.remoteAddress))
     return
   }

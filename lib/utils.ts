@@ -163,7 +163,7 @@ export function getChallengeEnablementStatus (challenge: Challenge,
     isWindows: isEnvironmentFunction
     isGitpod: isEnvironmentFunction
   } = { isDocker, isHeroku, isWindows, isGitpod }): ChallengeEnablementStatus {
-  if (!challenge?.disabledEnv) {
+  if ((challenge?.disabledEnv) == null) {
     return { enabled: true, disabledBecause: null }
   }
 

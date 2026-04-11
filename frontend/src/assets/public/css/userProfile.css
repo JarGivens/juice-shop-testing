@@ -3,12 +3,13 @@
  * SPDX-License-Identifier: MIT
  */
 
-@media (max-width: 900px) {
+@media (width <= 900px) {
   .mdl-layout-title {
     display: none !important;
   }
 }
-@media (max-width: 1200px) {
+
+@media (width <= 1200px) {
   #card {
     width: 65% !important;
   }
@@ -42,15 +43,15 @@ h3 {
   width: 50%;
 }
 
-::-webkit-input-placeholder {
+::input-placeholder {
   font-size: 0.66em;
 }
 
-::-moz-placeholder {
+::placeholder {
   font-size: 0.66em;
 }
 
-:-ms-input-placeholder {
+:input-placeholder {
   font-size: 0.66em;
 }
 

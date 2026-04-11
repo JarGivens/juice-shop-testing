@@ -27,11 +27,11 @@ mat-toolbar {
   display: flex;
 }
 
-@media (max-width: 599.98px) {
+@media (width <= 599.98px) {
   .hide-lt-sm { display: none !important; }
 }
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .hide-lt-md { display: none !important; }
 }
 
@@ -162,7 +162,7 @@ mat-search-bar {
   color: var(--theme-text-fade-30);
 }
 
-@media screen and (max-width: 959px) {
+@media screen and (width <= 959px) {
   .buttons {
     width: 48px;
   }
@@ -173,7 +173,7 @@ mat-search-bar {
   }
 }
 
-@media screen and (max-width: 959px) and (min-width: 600px) {
+@media screen and (width <= 959px) and (width >= 600px) {
   #homeButton {
     margin-left: $space-xs;
   }

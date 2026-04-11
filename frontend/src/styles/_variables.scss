@@ -5,18 +5,20 @@
 
 // Spacing Tokens
 // Standardized spacing for margins, paddings, and gaps using REM units.
-// Example: margin-bottom: $space-m;
+// Example: margin-bottom: $space-m;SpacingTokensStandardizedspacingformargins,paddings,andgapsusingREMunits.Example
 
-$space-3xs: 0.125rem; // 2px
-$space-2xs: 0.25rem; // 4px
-$space-xs: 0.5rem; // 8px
-$space-s: 0.625rem; // 10px
+$space-3xs: 0.125rem;
 
-$space-m: 1rem; // 16px
+ // 2px
+$space-2xs: 0.25rem;2px$space-2xs // 4px
+$space-xs: 0.5rem;4px$space-xs // 8px
+$space-s: 0.625rem;8px$space-s // 10px
 
-$space-ml: 1.25rem; // 20px
-$space-l: 1.5rem; // 24px
-$space-xl: 2rem; // 32px
-$space-2xl: 2.5rem; // 40px
-$space-3xl: 3rem; // 48px
-$space-4xl: 4rem; // 64px
+$space-m: 1rem;10px$space-m // 16px
+
+$space-ml: 1.25rem;16px$space-ml // 20px
+$space-l: 1.5rem;20px$space-l // 24px
+$space-xl: 2rem;24px$space-xl // 32px
+$space-2xl: 2.5rem;32px$space-2xl // 40px
+$space-3xl: 3rem;40px$space-3xl // 48px
+$space-4xl: 4rem;48px$space-4xl // 64px

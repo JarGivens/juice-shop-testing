@@ -34,7 +34,8 @@
     width: 30%;
   }
 }
-@media (max-width: 840px) {
+
+@media (width <= 840px) {
   .sandbox-container_body {
     flex-direction: column;
   }
@@ -46,7 +47,7 @@
 }
 
 .deployedaddresstext {
-  color: rgb(45, 151, 45);
+  color: rgb(45 151 45);
   font-weight: 600;
   margin: $space-s 0;
   word-break: break-all;

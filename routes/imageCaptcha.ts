@@ -16,7 +16,7 @@ export function imageCaptchas () {
       const captcha = svgCaptcha.create({ size: 5, noise: 2, color: true })
 
       const user = security.authenticatedUsers.from(req)
-      if (!user) {
+      if (user == null) {
         res.status(401).send(res.__('You need to be logged in to request a CAPTCHA.'))
         return
       }
@@ -38,7 +38,7 @@ export function imageCaptchas () {
 export const verifyImageCaptcha = () => async (req: Request, res: Response, next: NextFunction) => {
   try {
     const user = security.authenticatedUsers.from(req)
-    const UserId = user ? user.data ? user.data.id : undefined : undefined
+    const UserId = (user != null) ? user.data ? user.data.id : undefined : undefined
     const captchas = await ImageCaptchaModel.findAll({
       limit: 1,
       where: {

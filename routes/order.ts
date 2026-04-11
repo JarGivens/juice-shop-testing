@@ -37,7 +37,7 @@ export function placeOrder () {
       .then(async (basket: BasketModel | null) => {
         if (basket != null) {
           const customer = security.authenticatedUsers.from(req)
-          const email = customer ? customer.data ? customer.data.email : '' : ''
+          const email = (customer != null) ? customer.data ? customer.data.email : '' : ''
           const orderId = security.hash(email).slice(0, 4) + '-' + utils.randomHexString(16)
           const pdfFile = `order_${orderId}.pdf`
           const doc = new PDFDocument()
@@ -70,7 +70,7 @@ export function placeOrder () {
               challengeUtils.solveIf(challenges.christmasSpecialChallenge, () => { return BasketItem.ProductId === products.christmasSpecial.id })
               try {
                 const quantityRow = await QuantityModel.findOne({ where: { ProductId: BasketItem.ProductId } })
-                if (quantityRow) {
+                if (quantityRow != null) {
                   const newQuantity = quantityRow.quantity - BasketItem.quantity
                   await QuantityModel.update({ quantity: newQuantity }, { where: { ProductId: BasketItem.ProductId } })
                 }

@@ -19,10 +19,10 @@ export function profileImageUrlUpload () {
       const url = req.body.imageUrl
       if (url.match(/(.)*solve\/challenges\/server-side(.)*/) !== null) req.app.locals.abused_ssrf_bug = true
       const loggedInUser = security.authenticatedUsers.get(req.cookies.token)
-      if (loggedInUser) {
+      if (loggedInUser != null) {
         try {
           const response = await fetch(url)
-          if (!response.ok || !response.body) {
+          if (!response.ok || (response.body == null)) {
             throw new Error('url returned a non-OK status code or an empty body')
           }
           const ext = ['jpg', 'jpeg', 'png', 'svg', 'gif'].includes(url.split('.').slice(-1)[0].toLowerCase()) ? url.split('.').slice(-1)[0].toLowerCase() : 'jpg'

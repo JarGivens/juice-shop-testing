@@ -38,15 +38,15 @@ For a detailed introduction, full list of features and architecture overview ple
 ## Table of contents
 
 - [Setup](#setup)
-    - [From Sources](#from-sources)
-    - [Packaged Distributions](#packaged-distributions)
-    - [Docker Container](#docker-container)
-    - [Vagrant](#vagrant)
+  - [From Sources](#from-sources)
+  - [Packaged Distributions](#packaged-distributions)
+  - [Docker Container](#docker-container)
+  - [Vagrant](#vagrant)
 - [Demo](#demo)
 - [Documentation](#documentation)
-    - [Node.js version compatibility](#nodejs-version-compatibility)
-    - [Troubleshooting](#troubleshooting)
-    - [Official companion guide](#official-companion-guide)
+  - [Node.js version compatibility](#nodejs-version-compatibility)
+  - [Troubleshooting](#troubleshooting)
+  - [Official companion guide](#official-companion-guide)
 - [Contributing](#contributing)
 - [References](#references)
 - [Merchandise](#merchandise)
@@ -154,12 +154,12 @@ Please make sure you stay up to date with your chosen version.
 
 [![Gitter](http://img.shields.io/badge/gitter-join%20chat-1dce73.svg)](https://gitter.im/bkimminich/juice-shop)
 
-If you need help with the application setup please check 
+If you need help with the application setup please check
 [our existing _Troubleshooting_](https://pwning.owasp-juice.shop/companion-guide/latest/part4/troubleshooting.html)
 guide. If this does not solve your issue please post your specific problem or question in the
 [Gitter Chat](https://gitter.im/bkimminich/juice-shop) where community members can best try to help you.
 
-:stop_sign: **Please avoid opening GitHub issues for support requests or questions!**
+:stop_sign: __Please avoid opening GitHub issues for support requests or questions!__
 
 ### Official companion guide
 
@@ -175,7 +175,7 @@ and much more is also included.
 
 [Pwning OWASP Juice Shop](https://leanpub.com/juice-shop) is published under
 [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)
-and is available **for free** in PDF, Kindle and ePub format on LeanPub. You can also
+and is available __for free__ in PDF, Kindle and ePub format on LeanPub. You can also
 [browse the full content online](https://pwning.owasp-juice.shop)!
 
 [<img alt="Pwning OWASP Juice Shop cover" src="https://raw.githubusercontent.com/juice-shop/pwning-juice-shop/master/docs/modules/ROOT/assets/images/cover.jpg" width="200"/>](https://leanpub.com/juice-shop)

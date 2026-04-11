@@ -9,23 +9,24 @@
   display: block;
   margin: $space-3xl $space-4xl;
 
-  @media (max-width: 1500px) {
+  @media (width <= 1500px) {
     margin: $space-3xl $space-4xl;
   }
-  @media (max-width: 900px) {
+
+  @media (width <= 900px) {
     margin: $space-3xl;
   }
-  @media (max-width: 600px) {
+
+  @media (width <= 600px) {
     margin: $space-xl $space-m;
   }
 }
 
 .score-row {
-  column-gap: $space-m;
+  gap: $space-xs $space-m;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-height: 120px;
-  row-gap: $space-xs;
 
   // use 3 columns on large(ish) screens
   @media (max-width: 1500px) {
@@ -42,12 +43,10 @@
 }
 
 .challenges {
-  column-gap: $space-m;
+  gap: $space-s $space-m;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-
   margin-top: $space-xl;
-  row-gap: $space-s;
 
   // use 3 columns on large(ish) screens
   @media (max-width: 1500px) {
@@ -68,9 +67,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   margin: 0 $space-xl;
-
   min-height: 20vh;
 }
 

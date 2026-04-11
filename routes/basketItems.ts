@@ -34,7 +34,7 @@ export function addBasketItem () {
     }
 
     const user = security.authenticatedUsers.from(req)
-    if (user && basketIds[0] && basketIds[0] !== 'undefined' && Number(user.bid) != Number(basketIds[0])) { // eslint-disable-line eqeqeq
+    if ((user != null) && basketIds[0] && basketIds[0] !== 'undefined' && Number(user.bid) != Number(basketIds[0])) { // eslint-disable-line eqeqeq
       res.status(401).send('{\'error\' : \'Invalid BasketId\'}')
     } else {
       const basketItem = {
@@ -42,7 +42,7 @@ export function addBasketItem () {
         BasketId: basketIds[basketIds.length - 1],
         quantity: quantities[quantities.length - 1]
       }
-      challengeUtils.solveIf(challenges.basketManipulateChallenge, () => { return user && basketItem.BasketId && basketItem.BasketId !== 'undefined' && user.bid != basketItem.BasketId }) // eslint-disable-line eqeqeq
+      challengeUtils.solveIf(challenges.basketManipulateChallenge, () => { return (user != null) && basketItem.BasketId && basketItem.BasketId !== 'undefined' && user.bid != basketItem.BasketId }) // eslint-disable-line eqeqeq
 
       const basketItemInstance = BasketItemModel.build(basketItem)
       try {
@@ -67,7 +67,7 @@ export function quantityCheckBeforeBasketItemUpdate () {
     try {
       const item = await BasketItemModel.findOne({ where: { id: req.params.id } })
       const user = security.authenticatedUsers.from(req)
-      challengeUtils.solveIf(challenges.basketManipulateChallenge, () => { return user && req.body.BasketId && user.bid != req.body.BasketId }) // eslint-disable-line eqeqeq
+      challengeUtils.solveIf(challenges.basketManipulateChallenge, () => { return (user != null) && req.body.BasketId && user.bid != req.body.BasketId }) // eslint-disable-line eqeqeq
       if (req.body.quantity) {
         if (item == null) {
           throw new Error('No such item found!')

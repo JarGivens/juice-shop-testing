@@ -11,7 +11,7 @@ import * as security from '../lib/insecurity'
 export function orderHistory () {
   return async (req: Request, res: Response, next: NextFunction) => {
     const loggedInUser = security.authenticatedUsers.get(req.headers?.authorization?.replace('Bearer ', ''))
-    if (loggedInUser?.data?.email && loggedInUser.data.id) {
+    if (((loggedInUser?.data?.email) != null) && loggedInUser.data.id) {
       const email = loggedInUser.data.email
       const updatedEmail = email.replace(/[aeiou]/gi, '*')
       const order = await ordersCollection.find({ email: updatedEmail })

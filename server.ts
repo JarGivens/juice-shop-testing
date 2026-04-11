@@ -735,7 +735,7 @@ export async function start (readyCallback?: () => void) {
       logger.info(colors.cyan(`Server using proxy base path ${colors.bold(`${process.env.BASE_PATH}`)} for redirects`))
     }
     registerWebsocketEvents(server)
-    if (readyCallback) {
+    if (readyCallback != null) {
       readyCallback()
     }
   })

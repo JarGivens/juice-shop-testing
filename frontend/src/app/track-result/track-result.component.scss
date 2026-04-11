@@ -18,7 +18,7 @@ mat-card {
 }
 
 .heading {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
   height: 35px;
   justify-content: center;
   padding: 0 $space-ml;
@@ -71,6 +71,6 @@ mat-card {
   width: max-content;
 }
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .mat-column-price { display: none; }
 }

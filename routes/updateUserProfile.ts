@@ -15,14 +15,14 @@ export function updateUserProfile () {
   return async (req: Request, res: Response, next: NextFunction) => {
     const loggedInUser = security.authenticatedUsers.get(req.cookies.token)
 
-    if (!loggedInUser) {
+    if (loggedInUser == null) {
       next(new Error('Blocked illegal activity by ' + req.socket.remoteAddress))
       return
     }
 
     try {
       const user = await UserModel.findByPk(loggedInUser.data.id)
-      if (!user) {
+      if (user == null) {
         next(new Error('User not found'))
         return
       }

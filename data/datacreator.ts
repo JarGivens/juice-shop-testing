@@ -81,7 +81,7 @@ async function createChallenges () {
       const hasCodingChallenge = challengeKeysWithCodeChallenges.includes(key)
 
       if (hasCodingChallenge) {
-        tags = tags ? [...tags, 'With Coding Challenge'] : ['With Coding Challenge']
+        tags = (tags != null) ? [...tags, 'With Coding Challenge'] : ['With Coding Challenge']
       }
 
       try {
@@ -340,19 +340,19 @@ async function createProducts () {
   const tamperingChallengeProduct = products.find(({ urlForProductTamperingChallenge }) => urlForProductTamperingChallenge)
   const blueprintRetrievalChallengeProduct = products.find(({ fileForRetrieveBlueprintChallenge }) => fileForRetrieveBlueprintChallenge)
 
-  if (christmasChallengeProduct) {
+  if (christmasChallengeProduct != null) {
     christmasChallengeProduct.description += ' (Seasonal special offer! Limited availability!)'
     christmasChallengeProduct.deletedDate = '2014-12-27 00:00:00.000 +00:00'
   }
-  if (tamperingChallengeProduct) {
+  if (tamperingChallengeProduct != null) {
     tamperingChallengeProduct.description += ' <a href="' + tamperingChallengeProduct.urlForProductTamperingChallenge + '" target="_blank">More...</a>'
     delete tamperingChallengeProduct.deletedDate
   }
-  if (pastebinLeakChallengeProduct) {
+  if (pastebinLeakChallengeProduct != null) {
     pastebinLeakChallengeProduct.description += ' (This product is unsafe! We plan to remove it from the stock!)'
     pastebinLeakChallengeProduct.deletedDate = '2019-02-1 00:00:00.000 +00:00'
   }
-  if (blueprintRetrievalChallengeProduct) {
+  if (blueprintRetrievalChallengeProduct != null) {
     // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
     let blueprint = blueprintRetrievalChallengeProduct.fileForRetrieveBlueprintChallenge!
     if (utils.isUrl(blueprint)) {

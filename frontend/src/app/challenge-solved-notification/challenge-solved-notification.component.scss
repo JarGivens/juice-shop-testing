@@ -37,7 +37,7 @@ mat-card {
   transition: background-color 0.2s ease;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgb(0 0 0 / 10%);
   }
 }
 
@@ -55,10 +55,8 @@ mat-card {
   border: 3px solid;
   border-radius: 4px;
   color: inherit;
-
   cursor: pointer;
   display: inline-flex;
-
   font-size: 15px;
   font-weight: 500;
   gap: $space-3xs;
@@ -74,7 +72,7 @@ mat-card {
   }
 
   &:hover {
-    background-color: rgba(211, 211, 211, 0.04);
+    background-color: rgb(211 211 211 / 4%);
     box-shadow: none;
   }
 

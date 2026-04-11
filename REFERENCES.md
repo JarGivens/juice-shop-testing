@@ -56,8 +56,8 @@ mentioned or used!
   Timo Pagel :mega:
 * [People | Process | Technology Podcast](https://soundcloud.com/owasp-podcast/)
   (fka "OWASP 24/7 Podcast"):
-    * [OWASP Flagship Projects - Episode 02](https://soundcloud.com/owasp-podcast/owasp-flagship-projects-episode-02)
-    * [Less than 10 Minutes Series: The Juice Shop Project](https://soundcloud.com/owasp-podcast/less-than-10-minutes-series-the-juice-shop-project)
+  * [OWASP Flagship Projects - Episode 02](https://soundcloud.com/owasp-podcast/owasp-flagship-projects-episode-02)
+  * [Less than 10 Minutes Series: The Juice Shop Project](https://soundcloud.com/owasp-podcast/less-than-10-minutes-series-the-juice-shop-project)
 * [Learn Web App Security Penetration Testing with Juice Shop \[Free\]](https://youtu.be/ShUTDUYEMWA)
   by
   [Gerald Auger - Simply Cyber](https://www.YouTube.com/channel/UCG-48Ki-b6W_siaUkukJOSw)
@@ -66,42 +66,42 @@ mentioned or used!
   [Eddie Jaoude](https://www.YouTube.com/channel/UC5mnBodB73bR88fLXHSfzYA)
   :mega:
 * [ZAP in Ten](https://www.alldaydevops.com/zap-in-ten) with Simon Bennetts
-    * [ZAP in Ten: ADDO Workshop Section 1 - Introduction](https://play.vidyard.com/BAmiaxyzS3g2BCgX2vbVvV)
+  * [ZAP in Ten: ADDO Workshop Section 1 - Introduction](https://play.vidyard.com/BAmiaxyzS3g2BCgX2vbVvV)
       :mega:
-    * [ZAP in Ten: ADDO Workshop Section 3 - Packaged Scans](https://play.vidyard.com/iT5C1onahsh3YhQi5SRnLL)
+  * [ZAP in Ten: ADDO Workshop Section 3 - Packaged Scans](https://play.vidyard.com/iT5C1onahsh3YhQi5SRnLL)
       :mega:
-    * [ZAP in Ten: ADDO Workshop Section 4 - Intro to Authentication](https://play.vidyard.com/zwWm4qMRc8wD2KAgozvC5t)
+  * [ZAP in Ten: ADDO Workshop Section 4 - Intro to Authentication](https://play.vidyard.com/zwWm4qMRc8wD2KAgozvC5t)
       :mega:
-    * [ZAP in Ten: ADDO Workshop Section 6 - Standard Auth with JuiceShop](https://play.vidyard.com/igf3A8UdZ6QAGiFjEpLH86)
-    * [ZAP in Ten: ADDO Workshop Section 8 - JuiceShop SSO Authentication](https://play.vidyard.com/TMcBcuhyPt57sUqPcJUtpv)
+  * [ZAP in Ten: ADDO Workshop Section 6 - Standard Auth with JuiceShop](https://play.vidyard.com/igf3A8UdZ6QAGiFjEpLH86)
+  * [ZAP in Ten: ADDO Workshop Section 8 - JuiceShop SSO Authentication](https://play.vidyard.com/TMcBcuhyPt57sUqPcJUtpv)
 * 15min video tutorial by
   [Nick Malcolm](https://www.YouTube.com/channel/UCgU77NClL2pLS92viQro6yA):
   [OWASP Juice Shop 101](https://youtu.be/8ZYoe0xu6QY) :godmode:
 * [Application Security Podcast](https://securityjourney.com/application-security-podcast):
-    * [Björn Kimminich -- OWASP Juice Shop](https://www.buzzsprout.com/1730684/14121640-bjorn-kimminich-owasp-juice-shop) ([YouTube](https://youtu.be/ay5A7BcZxIs?si=nzhYfVqG5o7l9bWA)) 
-    * Episode 7.2:
+  * [Björn Kimminich -- OWASP Juice Shop](https://www.buzzsprout.com/1730684/14121640-bjorn-kimminich-owasp-juice-shop) ([YouTube](https://youtu.be/ay5A7BcZxIs?si=nzhYfVqG5o7l9bWA))
+  * Episode 7.2:
       [Jannik Hollenbach — Multijuicer: JuiceShop with a side of Kubernetes](https://podcast.securityjourney.com/jannik-hollenbach-multijuicer-juiceshop-with-a-side-of-kubernetes/)
       ([YouTube](https://youtu.be/3M6EMDKIAYs))
-    * Episode 5.21:
+  * Episode 5.21:
       [Season 5 Finale — A cross section of #AppSec (S05E21)](https://podcast.securityjourney.com/season-5-finale-a-cross-section-of-appsec/)
       (contains
       [5 minute AppSec: Björn Kimminich — JuiceShop](https://www.securityjourney.com/blog/bjorn-kimminich-juiceship-5-minute-appsec/)
       entirely)
-    * Episode 5.20:
+  * Episode 5.20:
       [Ronnie Flathers - Security programs big and small](https://podcast.securityjourney.com/ronnie-flathers-security-programs-big-and-small/)
       :mega:
-    * Episode 5.9:
+  * Episode 5.9:
       [The new JuiceShop, GSOC, and Open Security Summit](https://securityjourney.com/blog/bjorn-kimminich-the-new-juiceshop-gsoc-and-open-security-summit/)
-    * 5 minute AppSec:
+  * 5 minute AppSec:
       [Björn Kimminich — JuiceShop](https://www.securityjourney.com/blog/bjorn-kimminich-juiceship-5-minute-appsec/)
-    * Episode 4.27:
+  * Episode 4.27:
       [Season 4 Finale (S04E27)](https://www.securityjourney.com/blog/season-4-finale-s04e27/)
       (snippet from
       [4.17](https://securityjourney.com/blog/the-joy-of-the-vulnerable-web-juiceshops04e17/))
-    * Episode 4.20:
+  * Episode 4.20:
       [Security Culture Hacking: Disrupting the Security Status Quo (S04E20)](https://www.securityjourney.com/blog/security-culture-hacking-disrupting-the-security-status-quo-s04e20/)
       :mega:
-    * Episode 4.17:
+  * Episode 4.17:
       [The Joy of the Vulnerable Web: JuiceShop (S04E17)](https://securityjourney.com/blog/the-joy-of-the-vulnerable-web-juiceshops04e17/)
 * Webcast recording on [7 Minute Security](https://7ms.us):
   [DIY $500 Pentest Lab - Part 1](https://www.YouTube.com/watch?v=7qnaR6ZmJzA)
@@ -109,17 +109,17 @@ mentioned or used!
 * Recorded live streams from the
   [Twitch](https://aka.ms/DevSlopTwitch)/[Mixer](https://aka.ms/DevSlop-Mixer)
   [OWASP DevSlop](https://devslop.co/) Show:
-    * [OWASP DevSlop E12 - Juice Shop with Björn Kimminich](https://www.twitch.tv/videos/337620852)
+  * [OWASP DevSlop E12 - Juice Shop with Björn Kimminich](https://www.twitch.tv/videos/337620852)
       ([YouTube](https://youtu.be/KEYWRtGNDEc)) :godmode:
 * Webcast recording on
   [Signal Sciences](https://vimeo.com/signalsciences):
   [Secure Development Lessons from Purposely Insecure Applications](https://vimeo.com/241965102/40f6b1778b)
 * [7 Minute Security](https://7ms.us) Podcast:
-    * Episode #403:
+  * Episode #403:
       [7MOOMAMA - Juice Shop Song + Backdoors and Breaches Jingle](https://7ms.us/7ms-403-7moomama-juice-shop-song-backdoors-and-breaches-jingle/)
-    * Episode #318:
+  * Episode #318:
       [Interview with Bjorn Kimminich of OWASP Juice Shop](https://7ms.us/7ms-318-interview-with-bjorn-kimminich-of-owasp-juice-shop/)
-    * Shout outs in various episodes:
+  * Shout outs in various episodes:
       [#347](https://7ms.us/7ms-347-happy-5th-birthday-to-7ms/),
       [#342](https://7ms.us/7ms-342-interview-with-matt-mccullough/),
       [#310](https://7ms.us/7ms-310/),
@@ -131,8 +131,8 @@ mentioned or used!
   [OWASP ZAP](https://www.owasp.org/index.php/OWASP_Zed_Attack_Proxy_Project)
   using Juice Shop as the tested app:
   [All you need is Zaproxy - Security Testing for WebApps Made Easy](https://www.YouTube.com/watch?v=AQX84p9NhqY)
-    * [Example integration as a Docker Compose script](https://github.com/Soluto/webdriverio-zap-proxy)
-    * [Scan results of the example integration](https://jsfiddle.net/62aedL6n/)
+  * [Example integration as a Docker Compose script](https://github.com/Soluto/webdriverio-zap-proxy)
+  * [Scan results of the example integration](https://jsfiddle.net/62aedL6n/)
 
 ### Blogs & Articles
 
@@ -170,17 +170,17 @@ mentioned or used!
   :godmode:
 * Blog posts on
   [DevelopSec - Developing Better Security](https://www.developsec.com/):
-    * [Installing OWASP JuiceShop with Docker](https://www.developsec.com/2018/05/10/installing-owasp-juiceshop-with-docker/)
+  * [Installing OWASP JuiceShop with Docker](https://www.developsec.com/2018/05/10/installing-owasp-juiceshop-with-docker/)
       ([YouTube](https://www.YouTube.com/watch?v=ftS8I7WeKtw))
-    * [Installing OWASP JuiceShop with Heroku](https://www.developsec.com/2018/05/15/installing-owasp-juiceshop-with-heroku/)
+  * [Installing OWASP JuiceShop with Heroku](https://www.developsec.com/2018/05/15/installing-owasp-juiceshop-with-heroku/)
       ([YouTube](https://www.YouTube.com/watch?v=umrLbJkJRN0))
-    * [Burp Extension – Juice Shop Routes](https://www.developsec.com/2018/05/18/burp-extension-juice-shop-routes/)
+  * [Burp Extension – Juice Shop Routes](https://www.developsec.com/2018/05/18/burp-extension-juice-shop-routes/)
       ([YouTube](https://www.YouTube.com/watch?v=o628SfvwHp0)) :godmode:
 * Blog posts on
   [Jason Haley - Ramblings from an Independent Consultant](http://www.jasonhaley.com/):
-    * [How to Setup OWASP Juice Shop on Azure (Part 1 of 3)](http://www.jasonhaley.com/post/How-to-Setup-OWASP-Juice-Shop-on-Azure-%28Part-1-of-3%29)
-    * [Setup OWASP Juice Shop in Web App for Containers (Part 2 of 3)](http://www.jasonhaley.com/post/Setup-OWASP-Juice-Shop-in-Web-App-for-Containers-%28Part-2-of-3%29)
-    * [Setup OWASP Juice Shop in Azure Container Instances (Part 3 of 3)](http://www.jasonhaley.com/post/Setup-OWASP-Juice-Shop-in-Azure-Container-Instances-%28Part-3-of-3%29)
+  * [How to Setup OWASP Juice Shop on Azure (Part 1 of 3)](http://www.jasonhaley.com/post/How-to-Setup-OWASP-Juice-Shop-on-Azure-%28Part-1-of-3%29)
+  * [Setup OWASP Juice Shop in Web App for Containers (Part 2 of 3)](http://www.jasonhaley.com/post/Setup-OWASP-Juice-Shop-in-Web-App-for-Containers-%28Part-2-of-3%29)
+  * [Setup OWASP Juice Shop in Azure Container Instances (Part 3 of 3)](http://www.jasonhaley.com/post/Setup-OWASP-Juice-Shop-in-Azure-Container-Instances-%28Part-3-of-3%29)
 * Blog post on [Josh Grossman's blog](https://joshcgrossman.com):
   [Setting up an OWASP Juice Shop CTF](https://joshcgrossman.com/2018/03/15/setting-up-an-owasp-juice-shop-ctf/)
 * Blog post on [Mozilla Hacks](https://hacks.mozilla.org):
@@ -193,8 +193,8 @@ mentioned or used!
   [OWASP Juice Shop Vulnerable Webapp](https://stuartwintertear.net/owasp-juice-shop-vulnerable-webapp)
   ([Peerlyst cross-post](https://www.peerlyst.com/posts/owasp-juice-shop-vulnerable-webapp-stuart-winter-tear))
 * Blog posts on [OWASP Summit 2017](https://owaspsummit.org):
-    * [Juice Shop v4.0.0 Live Release](https://owaspsummit.org/2017/06/15/Juice-Shop-Live-Release-v4.html)
-    * [Juice Shop's call to pre-summit action](https://owaspsummit.org/2017/05/27/Juice-Shops-call-to-pre-summit-action.html)
+  * [Juice Shop v4.0.0 Live Release](https://owaspsummit.org/2017/06/15/Juice-Shop-Live-Release-v4.html)
+  * [Juice Shop's call to pre-summit action](https://owaspsummit.org/2017/05/27/Juice-Shops-call-to-pre-summit-action.html)
 * Vulnerable website collection on
   [Bonkers About Tech](https://www.bonkersabouttech.com):
   [40+ Intentionally Vulnerable Websites To (Legally) Practice Your Hacking Skills](https://www.bonkersabouttech.com/security/40-intentionally-vulnerable-websites-to-practice-your-hacking-skills/392)
@@ -239,28 +239,28 @@ mentioned or used!
 
 * Juice Shop at [OWASP Project Summit 2026](https://projectsummit.owasp.org), 04.-10.03.2026
   * [OWASP Contributor Mixer](https://luma.com/txn0myuk?tk=BHp1Ej), 05.03.2026
-  * [OWASP Juice Shop: For Developers](https://luma.com/4hp7c8bm) with Björn Kimminich & Jannik Hollenbach, 06.03.2026 
+  * [OWASP Juice Shop: For Developers](https://luma.com/4hp7c8bm) with Björn Kimminich & Jannik Hollenbach, 06.03.2026
 * [Juice Shop Track](https://open-security-summit-2020.heysummit.com/topics/owasp-juiceshop/)
   at [Open Security Summit 2020](https://open-security-summit.org/)
-    * [OWASP Juice Shop Cocktail Party: Ask us anything!](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-cocktail-party-ask-us-anything/)
+  * [OWASP Juice Shop Cocktail Party: Ask us anything!](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-cocktail-party-ask-us-anything/)
       with Björn Kimminich, Jannik Hollenbach & Timo Pagel 15.06.2020
       ([YouTube](https://youtu.be/h5ApBfFMmao))
-    * [OWASP Juice Shop Deep Dive: MultiJuicer](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-deep-dive-multijuicer/)
+  * [OWASP Juice Shop Deep Dive: MultiJuicer](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-deep-dive-multijuicer/)
       with Jannik Hollenbach & Robert Seedorf, 15.06.2020
       ([YouTube](https://youtu.be/1YHjkc3Xzd0))
-    * [OWASP Juice Shop Deep Dive: Integration](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-deep-dive-integration/)
+  * [OWASP Juice Shop Deep Dive: Integration](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-deep-dive-integration/)
       with Björn Kimminich, 15.06.2020
       ([YouTube](https://youtu.be/9SkUohiKgtU))
-    * [OWASP Juice Shop Deep Dive: Theming](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-deep-dive-theming-1/)
+  * [OWASP Juice Shop Deep Dive: Theming](https://open-security-summit-2020.heysummit.com/talks/owasp-juice-shop-deep-dive-theming-1/)
       with Björn Kimminich, 15.06.2020
       ([YouTube](https://youtu.be/WtY712DdlR8))
-    * [OWASP Juice Shop Introduction](https://pre-summit-training-sessions.heysummit.com/talks/owasp-juice-shop-introduction/)
+  * [OWASP Juice Shop Introduction](https://pre-summit-training-sessions.heysummit.com/talks/owasp-juice-shop-introduction/)
       with Björn Kimminich, 11.06.2020
       ([YouTube](https://youtu.be/wCF08BdXdDg))
-    * [MultiJuicer Introduction](https://pre-summit-training-sessions.heysummit.com/talks/multijuicer-introduction/)
+  * [MultiJuicer Introduction](https://pre-summit-training-sessions.heysummit.com/talks/multijuicer-introduction/)
       with Jannik Hollenbach and Robert Seedorf, 02.06.2020
       ([YouTube](https://youtu.be/6NMjZbfnTOU))
-    * [OWASP Juice Shop Introduction](https://pre-summit-training-sessions.heysummit.com/talks/owasp-juice-shop/)
+  * [OWASP Juice Shop Introduction](https://pre-summit-training-sessions.heysummit.com/talks/owasp-juice-shop/)
       with Björn Kimminich, 02.06.2020
       ([YouTube](https://youtu.be/Ry0mXz6ZPXc))
 * [Drinks with Adversaries: Creating Adversary Trading Cards](https://pre-summit-training-sessions.heysummit.com/talks/social-drinks-and-adversaries)
@@ -288,7 +288,7 @@ mentioned or used!
 
 * Student project from
   [Google Summer of Code 2025](https://summerofcode.withgoogle.com/archive/2025/projects)
-    * [Juice Shop side-project rennovation](https://summerofcode.withgoogle.com/organizations/owasp-foundation/projects/details/rzlkFqYj)
+  * [Juice Shop side-project rennovation](https://summerofcode.withgoogle.com/organizations/owasp-foundation/projects/details/rzlkFqYj)
       by Harsh Kumar (mentored by Jannik Hollenbach and Björn Kimminich)
 * Student projects from
   [Google Summer of Code 2023](https://summerofcode.withgoogle.com/archive/2023/projects)
@@ -298,30 +298,30 @@ mentioned or used!
     by Rishabh Keshan (mentored by Shubham Palriwala and Björn Kimminich)
 * Student project from
   [Google Summer of Code 2022](https://summerofcode.withgoogle.com/archive/2022/projects)
-    * [Replacement for Protractor end-to-end & Frisby API test suite to Cypress](https://summerofcode.withgoogle.com/organizations/owasp-foundation/projects/details/2J1Xedwf)
+  * [Replacement for Protractor end-to-end & Frisby API test suite to Cypress](https://summerofcode.withgoogle.com/organizations/owasp-foundation/projects/details/2J1Xedwf)
       by Shubham Palriwala (mentored by Jannik Hollenbach and Björn Kimminich)
 * Student project from
   [Google Summer of Code 2021](https://summerofcode.withgoogle.com/archive/2021/projects)
-    * [Extending the features of the vulnerable code snippets](https://summerofcode.withgoogle.com/archive/2021/projects/5180407718346752P)
+  * [Extending the features of the vulnerable code snippets](https://summerofcode.withgoogle.com/archive/2021/projects/5180407718346752P)
       by Ayas Behera (mentored by Jannik Hollenbach and Björn Kimminich)
 * Student project from
   [Google Summer of Code 2020](https://summerofcode.withgoogle.com/archive/2020/projects)
-    * [Juice-Shop ChatBot and general fixes](https://summerofcode.withgoogle.com/archive/2020/projects/5660020047347712/)
+  * [Juice-Shop ChatBot and general fixes](https://summerofcode.withgoogle.com/archive/2020/projects/5660020047347712/)
       by Mohit Sharma (mentored by Jannik Hollenbach, Björn Kimminich and Timo Pagel)
 * Student project from
   [Google Summer of Code 2019](https://summerofcode.withgoogle.com/archive/2019/projects)
-    * [OWASP Juice Shop: Feature Pack 2019](https://summerofcode.withgoogle.com/archive/2019/projects/6526397403627520/)
+  * [OWASP Juice Shop: Feature Pack 2019](https://summerofcode.withgoogle.com/archive/2019/projects/6526397403627520/)
       by Arpit Agrawal (mentored by Jannik Hollenbach, Björn Kimminich and Shoeb Patel)
 * Student projects from
   [Google Summer of Code 2018](https://summerofcode.withgoogle.com/archive/2018/projects)
-    * [OWASP Juice Shop : Challenge Pack 2018](https://summerofcode.withgoogle.com/archive/2018/projects/6267528737193984)
+  * [OWASP Juice Shop : Challenge Pack 2018](https://summerofcode.withgoogle.com/archive/2018/projects/6267528737193984)
       by Shoeb Patel (mentored by Jannik Hollenbach and Timo Pagel)
-    * [OWASP Juice Shop : Frontend Technology Update](https://summerofcode.withgoogle.com/archive/2018/projects/6636660909408256)
+  * [OWASP Juice Shop : Frontend Technology Update](https://summerofcode.withgoogle.com/archive/2018/projects/6636660909408256)
       by Aashish Singh (mentored by Björn Kimminich)
 
 ## Conference and Meetup Appearances
 
-> Upcoming events are marked with :date:. The availability of link destinations for past events cannot be guaranteed. 
+> Upcoming events are marked with :date:. The availability of link destinations for past events cannot be guaranteed.
 
 #### 2026
 
@@ -351,7 +351,7 @@ mentioned or used!
 
 * [Juice Shop Training: Train the Trainer Edition](http://www.owaspbenelux.eu/program/training#Bj%C3%B6rn-Kimminich) with Björn Kimminich, [OWASP BeNeLux Days 2023](http://www.owaspbenelux.eu/). 24.11.2023
 * [OWASP Juice Shop - An Open Source Software (and security) Fairytale](http://www.owaspbenelux.eu/program/talks#Bj%C3%B6rn-Kimminich) by Björn Kimminich, [OWASP BeNeLux Days 2023](http://www.owaspbenelux.eu/). 23.11.2023 ([YouTube](https://youtu.be/54caQ4g72oI))
-* [How Vulnerable is Juice Shop? A Secure Code Review of Insecure Code](https://www.nationalcybersummit.com/Program/2023-Agenda) by Joshua Beck, [National Cyber Summit 2023](https://www.nationalcybersummit.com/Home). 20.09.2023 
+* [How Vulnerable is Juice Shop? A Secure Code Review of Insecure Code](https://www.nationalcybersummit.com/Program/2023-Agenda) by Joshua Beck, [National Cyber Summit 2023](https://www.nationalcybersummit.com/Home). 20.09.2023
 * [Track keynote: OWASP Juice Shop](https://sikkerhetsfestivalen.no/program-2023) by Björn Kimminich, [Sikkerhetsfestivalen 2023](https://sikkerhetsfestivalen.no/). 29.08.2023
 * [Juice Shop Update³](https://god.owasp.de/2023/schedule/index.html) by Björn Kimminich, [German OWASP Day 2023](https://god.owasp.de/2023). 31.05.2023 ([YouTube](https://youtu.be/87DuRYwXtxk))
 * [Juice Shop Training: Train the Trainer Edition](https://god.owasp.de/2023/schedule/index.html) with Björn Kimminich, [German OWASP Day 2023](https://god.owasp.de/2023). 30.05.2023
@@ -628,4 +628,4 @@ mentioned or used!
 
 ## Usage in Tools & Products
 
-* [How to try GitHub Advanced Security with your team](https://resources.github.com/security/tools/ghas-trial/) uses Juice Shop as an example for CI/CD integration in [Code scanning in action with Juice Shop](https://resources.github.com/security/tools/ghas-trial/#code-scanning-in-action-with-juice-shop) 
+* [How to try GitHub Advanced Security with your team](https://resources.github.com/security/tools/ghas-trial/) uses Juice Shop as an example for CI/CD integration in [Code scanning in action with Juice Shop](https://resources.github.com/security/tools/ghas-trial/#code-scanning-in-action-with-juice-shop)

@@ -43,14 +43,16 @@ mat-icon {
   width: 24px !important;
 }
 
-@media screen and (max-width: 1279px) {
+@media screen and (width <= 1279px) {
   mat-icon {
     margin-left: $space-3xs !important;
   }
 }
 
 .hide-lt-lg { display: inline; }
-@media (max-width: 1279.98px) { .hide-lt-lg { display: none !important; } }
+
+@media (width <= 1279.98px) { .hide-lt-lg { display: none !important; } }
 
 .hide-lt-sm { display: inline; }
-@media (max-width: 599.98px) { .hide-lt-sm { display: none !important; } }
+
+@media (width <= 599.98px) { .hide-lt-sm { display: none !important; } }

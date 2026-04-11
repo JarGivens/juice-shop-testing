@@ -5,7 +5,7 @@
 
 @use '../../styles/variables' as *;
 
-$bg-heading: rgba(0, 0, 0, 0.13);
+$bg-heading: rgb(0 0 0 / 13%);
 
 .container {
   align-items: stretch;
@@ -15,7 +15,7 @@ $bg-heading: rgba(0, 0, 0, 0.13);
   justify-content: center;
 }
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .container { flex-direction: column; }
   .align-self-lt-md-center { align-self: center; }
 }
@@ -40,8 +40,7 @@ $bg-heading: rgba(0, 0, 0, 0.13);
 
 .whitepaper-buttons {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   gap: $space-xs;
 }
 

@@ -6,7 +6,7 @@
 @use '../../styles/variables' as *;
 
 // Variables
-$bg-heading: rgba(0, 0, 0, 0.2);
+$bg-heading: rgb(0 0 0 / 20%);Variables$bg-heading
 $cell-padding: $space-2xs;
 $border-radius: 4px;
 $transition-speed: 0.2s;
@@ -17,7 +17,7 @@ h1 {
 }
 
 h1 small {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgb(0 0 0 / 60%);
   font-size: 0.8em;
   margin-left: $space-xs;
 }
@@ -43,7 +43,7 @@ mat-header-row {
 }
 
 mat-row {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15) !important;
+  border-bottom: 1px solid rgb(255 255 255 / 15%) !important;
   box-sizing: border-box;
   margin: 0;
   padding: $space-s 0;
@@ -55,7 +55,7 @@ mat-row:last-of-type {
 }
 
 mat-row:hover {
-  background-color: rgba(0, 0, 0, 0.04);
+  background-color: rgb(0 0 0 / 4%);
 }
 
 mat-cell {
@@ -83,7 +83,7 @@ mat-footer-cell:last-of-type {
 .mat-column-price { width: 16%; }
 .mat-column-remove { width: 10%; }
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .mat-column-image,
   .mat-column-price,
   .mat-column-product,
@@ -137,12 +137,12 @@ mat-footer-cell:last-of-type {
 }
 
 .quantity-controls button {
-  color: rgba(0, 0, 0, 0.6);
+  color: rgb(0 0 0 / 60%);
   transition: color $transition-speed ease;
 }
 
 .quantity-controls button:hover {
-  color: rgba(0, 0, 0, 0.87);
+  color: rgb(0 0 0 / 87%);
 }
 
 .quantity-controls span {
@@ -181,7 +181,7 @@ mat-footer-cell:last-of-type {
 
 // Delete button
 .far.fa-trash-alt {
-  color: rgba(0, 0, 0, 0.54);
+  color: rgb(0 0 0 / 54%);
   transition: color $transition-speed ease;
 }
 

@@ -30,7 +30,8 @@ mat-table {
 .half-field:last-of-type {
   margin-right: 0;
 }
-@media (max-width: 599.98px) {
+
+@media (width <= 599.98px) {
   .half-field {
     margin-right: 0;
     width: 100%;
@@ -38,7 +39,7 @@ mat-table {
 }
 
 .heading {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
   font-size: x-large;
   justify-content: center;
   padding: $space-s $space-ml;
@@ -63,8 +64,8 @@ mat-header-row {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  -moz-appearance: none;
+  appearance: none;
+  appearance: none;
   margin: 0;
 }
 

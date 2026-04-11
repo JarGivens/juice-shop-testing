@@ -52,10 +52,7 @@ mat-card-title {
 .emptyState {
   display: block;
   height: auto !important;
-  margin-bottom: $space-ml;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: $space-ml;
+  margin: $space-ml auto $space-ml auto;
   width: 50%;
 }
 
@@ -78,12 +75,12 @@ mat-card-title {
 
 .mat-mdc-header-cell:first-child {
   //  Apply 24px padding only to the first column
-  padding-left: $space-l !important;
+  padding-left: $space-l !important;Apply24pxpaddingonlytothefirstcolumnpadding-left
 }
 
 .mat-mdc-header-cell:not(:first-child) {
   //  Keep 2px for the rest
-  padding-left: $space-3xs !important;
+  padding-left: $space-3xs !important;Keep2pxfortherestpadding-left
 }
 
 .mat-mdc-header-cell {
@@ -145,7 +142,7 @@ mat-table {
 .mat-column-review { width: 15%; }
 
 
-@media (max-width: 959.98px) {
+@media (width <= 959.98px) {
   .emptyState {
     margin-left: 0;
     margin-right: 0;

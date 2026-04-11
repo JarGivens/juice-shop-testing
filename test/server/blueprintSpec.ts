@@ -38,7 +38,7 @@ describe('blueprint', () => {
           if (utils.isUrl(product.image)) {
             pathToImage = path.resolve('frontend/dist/frontend', pathToImage, product.image.substring(product.image.lastIndexOf('/') + 1))
             const response = await fetch(product.image)
-            if (!response.ok || !response.body) {
+            if (!response.ok || (response.body == null)) {
               expect.fail(`Could not download image from ${product.image}`)
               return
             }

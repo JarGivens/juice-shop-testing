@@ -64,7 +64,7 @@ export async function verify (req: Request, res: Response) {
 export async function status (req: Request, res: Response) {
   try {
     const data = security.authenticatedUsers.from(req)
-    if (!data) {
+    if (data == null) {
       throw new Error('You need to be logged in to see this')
     }
     const { data: user } = data
@@ -103,7 +103,7 @@ export async function status (req: Request, res: Response) {
 export async function setup (req: Request, res: Response) {
   try {
     const data = security.authenticatedUsers.from(req)
-    if (!data) {
+    if (data == null) {
       throw new Error('Need to login before setting up 2FA')
     }
     const { data: user } = data
@@ -148,7 +148,7 @@ export async function setup (req: Request, res: Response) {
 export async function disable (req: Request, res: Response) {
   try {
     const data = security.authenticatedUsers.from(req)
-    if (!data) {
+    if (data == null) {
       throw new Error('Need to login before setting up 2FA')
     }
     const { data: user } = data

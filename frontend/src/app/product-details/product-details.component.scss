@@ -117,7 +117,7 @@ div {
   gap: $space-ml;
 }
 
-@media (max-width: 599.98px) {
+@media (width <= 599.98px) {
   .details-row {
     flex-direction: column;
   }

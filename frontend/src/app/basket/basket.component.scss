@@ -5,7 +5,7 @@
 
 @use '../../styles/variables' as *;
 
-$bg-heading: rgba(0, 0, 0, 0.13);
+$bg-heading: rgb(0 0 0 / 13%);
 
 .container {
   min-width: 420px;
@@ -65,7 +65,7 @@ mat-expansion-panel {
   padding-top: $space-s;
 }
 
-@media (max-width: 599.98px) {
+@media (width <= 599.98px) {
   mat-card {
     margin-bottom: $space-2xl;
     margin-left: $space-m;

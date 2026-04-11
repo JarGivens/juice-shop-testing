@@ -16,6 +16,7 @@
 
 mat-dialog-actions {
   --mat-dialog-actions-padding: $space-ml $space-l;
+
   display: grid;
   gap: $space-m;
   grid-template-columns: 1fr;

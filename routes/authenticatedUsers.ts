@@ -18,7 +18,7 @@ async function retrieveUserList (req: Request, res: Response, next: NextFunction
         let lastLoginTime: number | null = null
         if (userToken) {
           const parsedToken = decode(userToken, { json: true })
-          lastLoginTime = parsedToken ? Math.floor(new Date(parsedToken?.iat ?? 0 * 1000).getTime()) : null
+          lastLoginTime = (parsedToken != null) ? Math.floor(new Date(parsedToken?.iat ?? 0 * 1000).getTime()) : null
         }
 
         return {

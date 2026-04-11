@@ -28,7 +28,7 @@ export const emptyUserRegistration = () => (req: Request, res: Response, next: N
 export const forgedFeedbackChallenge = () => (req: Request, res: Response, next: NextFunction) => {
   challengeUtils.solveIf(challenges.forgedFeedbackChallenge, () => {
     const user = security.authenticatedUsers.from(req)
-    const userId = user?.data ? user.data.id : undefined
+    const userId = ((user?.data) != null) ? user.data.id : undefined
     return req.body?.UserId && req.body.UserId != userId // eslint-disable-line eqeqeq
   })
   next()
@@ -108,7 +108,7 @@ export const serverSideChallenges = () => (req: Request, res: Response, next: Ne
 function jwtChallenge (challenge: Challenge, req: Request, algorithm: string, email: string | RegExp) {
   const token = utils.jwtFrom(req)
   if (token) {
-    const decoded = jws.decode(token) ? jwt.decode(token) : null
+    const decoded = (jws.decode(token) != null) ? jwt.decode(token) : null
 
     if (decoded === null || typeof decoded === 'string') {
       return

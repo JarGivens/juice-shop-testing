@@ -239,7 +239,7 @@ describe('/#/contact', () => {
       cy.get('#rating').type('{rightarrow}{rightarrow}{rightarrow}')
       cy.task<ProductConfig>('GetPastebinLeakProduct').then((pastebinLeakProduct: ProductConfig) => {
         cy.get('#comment').type(
-          pastebinLeakProduct.keywordsForPastebinDataLeakChallenge ? pastebinLeakProduct.keywordsForPastebinDataLeakChallenge.toString() : '?'
+          (pastebinLeakProduct.keywordsForPastebinDataLeakChallenge != null) ? pastebinLeakProduct.keywordsForPastebinDataLeakChallenge.toString() : '?'
         )
       })
       cy.get('#submitButton').click({ force: true }) // FIXME Analyze Cypress recordings to properly fix behavior during test

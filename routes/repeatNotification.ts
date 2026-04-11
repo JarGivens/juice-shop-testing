@@ -11,7 +11,7 @@ export function repeatNotification () {
     const challengeName: string = decodeURIComponent(query.challenge as string)
     const challenge = challengeUtils.findChallengeByName(challengeName)
 
-    if (challenge?.solved) {
+    if ((challenge?.solved) != null) {
       challengeUtils.sendNotification(challenge, true)
     }
 

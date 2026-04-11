@@ -3,13 +3,10 @@
  * SPDX-License-Identifier: MIT
  */
 @use '@angular/material' as mat;
-
 @use 'sass:map';
 @use 'sass:color';
-
 @use './styles/theme' as *;
 @use './styles/variables' as *;
-
 @use './hacking-instructor/hacking-instructor.scss';
 
 @mixin link-theme($theme) {
@@ -109,7 +106,6 @@
   --theme-primary-fade-30: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, primary)), $alpha: 0.3)};
   --theme-primary-fade-40: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, primary)), $alpha: 0.4)};
   --theme-primary-fade-50: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, primary)), $alpha: 0.5)};
-
   --theme-accent: #{mat.m2-get-color-from-palette(map.get($theme, accent))};
   --theme-accent-lighter: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, accent)), $lightness: 6%)};
   --theme-accent-light: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, accent)), $lightness: 10%)};
@@ -120,7 +116,6 @@
   --theme-accent-fade-30: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, accent)), $alpha: 0.3)};
   --theme-accent-fade-40: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, accent)), $alpha: 0.4)};
   --theme-accent-fade-50: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, accent)), $alpha: 0.5)};
-
   --theme-warn: #{mat.m2-get-color-from-palette(map.get($theme, warn))};
   --theme-warn-lighter: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, warn)), $lightness: 6%)};
   --theme-warn-light: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, warn)), $lightness: 10%)};
@@ -131,7 +126,6 @@
   --theme-warn-fade-30: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, warn)), $alpha: 0.3)};
   --theme-warn-fade-40: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, warn)), $alpha: 0.4)};
   --theme-warn-fade-50: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, warn)), $alpha: 0.5)};
-
   --theme-text: #{mat.m2-get-color-from-palette(map.get($theme, foreground), text)};
   --theme-text-lighter: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), $lightness: 6%)};
   --theme-text-light: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), $lightness: 10%)};
@@ -142,10 +136,8 @@
   --theme-text-fade-30: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), $alpha: 0.3)};
   --theme-text-fade-40: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), $alpha: 0.4)};
   --theme-text-fade-50: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), $alpha: 0.5)};
-
   --theme-text-invert-15: #{color.invert(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), 15%)};
   --theme-text-invert-30: #{color.invert(mat.m2-get-color-from-palette(map.get($theme, foreground), text,), 30%)};
-
   --theme-background: #{mat.m2-get-color-from-palette(map.get($theme, background), card)};
   --theme-background-lighter: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, background), card), $lightness: 6%)};
   --theme-background-light: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, background), card), $lightness: 10%)};
@@ -154,7 +146,8 @@
   --theme-background-darkest: #{color.adjust(mat.m2-get-color-from-palette(map.get($theme, background), card), $lightness: -14%)};
 
   // make background of search field transparent
-  --mdc-filled-text-field-container-color: #0000;
+  --mdc-filled-text-field-container-color: #0000;makebackgroundofsearchfieldtransparent--mdc-filled-text-field-container-color
+
   --mdc-filled-text-field-disabled-container-color: #0000;
 }
 
@@ -196,7 +189,7 @@
   @include overlay-theme($theme);
 }
 
-$bg-hacking-instructor: rgba(0, 0, 0, 0.3);
+$bg-hacking-instructor: rgb(0 0 0 / 30%);
 
 .deeppurple-amber-theme {
   @include custom-components-theme($deeppurple-amber-theme);

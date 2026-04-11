@@ -4,7 +4,7 @@ on:
     tags:
       - v*
 env:
-  CYCLONEDX_NPM_VERSION: '^2.0.0||^3.0.0||^4.0.0'   # keep in sync with package.json
+  CYCLONEDX_NPM_VERSION: "^2.0.0||^3.0.0||^4.0.0" # keep in sync with package.json
 jobs:
   package:
     runs-on: ${{ matrix.os }}
@@ -40,7 +40,7 @@ jobs:
         run: |
           npm install --production
           npm run package:ci
-      - name: 'Attach packaged archive to tag release'
+      - name: "Attach packaged archive to tag release"
         uses: softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631 #v2.2.2
         with:
           draft: true

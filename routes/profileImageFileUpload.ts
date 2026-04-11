@@ -33,7 +33,7 @@ export function profileImageFileUpload () {
       return
     }
     const loggedInUser = security.authenticatedUsers.get(req.cookies.token)
-    if (!loggedInUser) {
+    if (loggedInUser == null) {
       next(new Error('Blocked illegal activity by ' + req.socket.remoteAddress))
       return
     }

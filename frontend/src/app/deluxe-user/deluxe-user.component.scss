@@ -14,7 +14,7 @@
 }
 
 .heading {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgb(0 0 0 / 20%);
   font-size: x-large;
   padding: $space-m $space-l;
 }
@@ -38,7 +38,7 @@
     text-align: center;
   }
 
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
     grid-template-columns: 1fr;
   }
 }
@@ -48,7 +48,7 @@
   gap: $space-s;
   grid-template-columns: repeat(3, 1fr);
 
-  @media screen and (max-width: 768px) {
+  @media screen and (width <= 768px) {
     grid-template-columns: 1fr;
   }
 }

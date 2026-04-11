@@ -13,7 +13,8 @@ $vertical-padding: $space-xs;
   @media (max-width: 810px) {
     grid-column: span 2;
   }
-  @media (max-width: 600px) {
+
+  @media (width <= 600px) {
     grid-column: span 1;
   }
 }
@@ -21,18 +22,13 @@ $vertical-padding: $space-xs;
 .difficulties-group {
   background-color: var(--theme-background-darkest);
   border-radius: 4px;
-
   color: var(--theme-text);
-  column-gap: $space-m;
+  gap: $space-2xs $space-m;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-
   height: calc(100% - (2 * $vertical-margin + 2 * $vertical-padding));
-
   margin: $vertical-margin $space-2xs;
-
   padding: $vertical-padding $space-m;
-  row-gap: $space-2xs;
 
   .difficulty-container {
     align-items: center;
@@ -55,7 +51,7 @@ $vertical-padding: $space-xs;
     font-size: 11px;
     line-height: 11px;
     // text looks a bit more centered in the star if it is a bit under the center
-    margin-top: $space-3xs;
+    margin-top: $space-3xs;textlooksabitmorecenteredinthestarifitisabitunderthecentermargin-top
     position: absolute;
   }
 }

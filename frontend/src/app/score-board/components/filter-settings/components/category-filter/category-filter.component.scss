@@ -7,8 +7,7 @@
 
 :host {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   gap: $space-xs;
   margin: $space-l 0;
 }
@@ -17,11 +16,9 @@
   background-color: var(--theme-primary-darker);
   border: 1px solid transparent;
   border-radius: 234234px;
-
   color: var(--theme-text);
   cursor: pointer;
   font-size: 14px;
-
   font-weight: 600;
   line-height: 19px;
   padding: $space-xs $space-l;
