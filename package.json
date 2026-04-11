@@ -62,7 +62,7 @@
     "serve": "concurrently --kill-others \"ts-node app.ts\" \"cd frontend && npm run start\"",
     "serve:dev": "concurrently --kill-others \"ts-node-dev app.ts\" \"cd frontend && npm run start\"",
     "start": "node build/app",
-    "test": "cd frontend && npm run test -- --watch=false --source-map=true && cd .. && npm run test:server",
+    "test": "jest",
     "test:chromium": "cd frontend && npm run test -- --watch=false --source-map=false --browsers=ChromiumHeadless && cd .. && npm run test:server",
     "test:server": "nyc --report-dir=./build/reports/coverage/server-tests mocha -r ts-node/register -r source-map-support/register --recursive test/server/**/*.ts",
     "test:api": "npm run frisby",
@@ -72,34 +72,6 @@
     "rsn:update": "ts-node rsn/rsn-update.ts",
     "vagrant": "cd vagrant && vagrant up",
     "sbom": "cyclonedx-npm --omit=dev --output-format=JSON --output-file=bom.json"
-  },
-  "jest": {
-    "transform": {
-      "^.+\\.[tj]s$": [
-        "ts-jest",
-        {
-          "diagnostics": false
-        }
-      ]
-    },
-    "globalSetup": "./test/apiTestsSetup.ts",
-    "globalTeardown": "./test/apiTestsTeardown.ts",
-    "modulePathIgnorePatterns": [
-      "/build"
-    ],
-    "setupFilesAfterEnv": [
-      "./test/apiTestsSetupJest.ts"
-    ],
-    "testMatch": [
-      "<rootDir>/test/api/*Spec.[jt]s"
-    ],
-    "testPathIgnorePatterns": [
-      "/node_modules/",
-      "/frontend/node_modules/"
-    ],
-    "testEnvironmentOptions": {
-      "url": "http://localhost"
-    }
   },
   "nyc": {
     "extends": "@istanbuljs/nyc-config-typescript",
